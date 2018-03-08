@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundMusicList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MusicIndexStyle"
+            android:text="@string/musicName" />
+
+        <TextView
+            style="@style/MusicStyle"
+            android:id="@+id/musicName_text_view"
+            tools:text="Thunder" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MusicIndexStyle"
+            android:text="@string/musicArtist" />
+
+        <TextView
+            style="@style/MusicStyle"
+            android:id="@+id/musicArtist_text_view"
+            tools:text="Imagine Dragons" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/MusicIndexStyle"
+            android:text="@string/musicDuration" />
+
+        <TextView
+            style="@style/MusicStyle"
+            android:id="@+id/musicDuration_text_view"
+            tools:text="03:45" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

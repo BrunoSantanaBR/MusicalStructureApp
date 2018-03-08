@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+
+    <string name="musicName">Music Name:</string>
+    <string name="musicArtist">Artist:</string>
+    <string name="musicDuration">Duration:</string>
+
+</resources>
