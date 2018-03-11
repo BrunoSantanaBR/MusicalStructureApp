@@ -195,10 +195,7 @@ public class PlayMusicActivity extends AppCompatActivity {
                 musicDuration.setText(setMusicDuration());
                 mSeekBar.setProgress(progress);
                 mMediaPlayer.seekTo(progress);
-
-                mMediaPlayer.release();
-                mMediaPlayer = null;
-
+                
                 changeIconPlayPause(true);
             }
         });
