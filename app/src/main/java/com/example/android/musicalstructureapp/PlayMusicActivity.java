@@ -94,7 +94,6 @@ public class PlayMusicActivity extends AppCompatActivity {
                         Toast.makeText(PlayMusicActivity.this, "Some error occured", Toast.LENGTH_SHORT).show();
                     }
 
-
                     if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
                         int temp;
                         synchronized (this) {
@@ -171,6 +170,11 @@ public class PlayMusicActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onStop(){
+        super.onStop();
+    }
+
     private void startPlayMusic() {
 
         mMediaPlayer.start();
@@ -191,6 +195,9 @@ public class PlayMusicActivity extends AppCompatActivity {
                 musicDuration.setText(setMusicDuration());
                 mSeekBar.setProgress(progress);
                 mMediaPlayer.seekTo(progress);
+
+                mMediaPlayer.release();
+                mMediaPlayer = null;
 
                 changeIconPlayPause(true);
             }

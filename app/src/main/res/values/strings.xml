@@ -5,4 +5,6 @@
     <string name="musicArtist">Artist:</string>
     <string name="musicDuration">Duration:</string>
 
+    <string name="playMusic">Playing Music</string>
+
 </resources>
